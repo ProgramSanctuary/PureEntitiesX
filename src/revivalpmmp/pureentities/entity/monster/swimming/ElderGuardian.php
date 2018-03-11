@@ -38,4 +38,7 @@ class ElderGuardian extends SwimmingMonster implements Monster{
 	public function getName() : string{
 		return "ElderGuardian";
 	}
+	public function getMaxHealth() : int{
+		return 20;
+	}
 }
