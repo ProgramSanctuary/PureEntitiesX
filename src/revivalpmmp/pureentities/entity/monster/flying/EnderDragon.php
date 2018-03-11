@@ -17,7 +17,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 declare(strict_types=1);
+
 namespace revivalpmmp\pureentities\entity\monster\flying;
+	
 use pocketmine\item\Item;
 use revivalpmmp\pureentities\entity\monster\FlyingMonster;
 use revivalpmmp\pureentities\entity\projectile\LargeFireball;
@@ -30,8 +32,11 @@ use pocketmine\level\sound\LaunchSound;
 use pocketmine\math\Vector3;
 use pocketmine\Player;
 use revivalpmmp\pureentities\data\Data;
+
 class ender_dragon extends FlyingMonster implements ProjectileSource{
+	
 	const NETWORK_ID = Data::NETWORK_IDS["ender_dragon"];
+	
 	public function initEntity(){
 		parent::initEntity();
 		$this->width = Data::WIDTHS[self::NETWORK_ID];
@@ -40,12 +45,15 @@ class ender_dragon extends FlyingMonster implements ProjectileSource{
 		$this->fireProof = true;
 		$this->setDamage([0, 0, 0, 0]);
 	}
+	
 	public function getName() : string{
 		return "Ghast";
 	}
+	
 	public function targetOption(Creature $creature, float $distance) : bool{
 		return (!($creature instanceof Player) || ($creature->isSurvival() && $creature->spawned)) && $creature->isAlive() && !$creature->isClosed() && $distance <= 10000;
 	}
+	
 	public function attackEntity(Entity $player){
 		if($this->attackDelay > 30 && mt_rand(1, 32) < 4 && $this->distance($player) <= 100){
 			$this->attackDelay = 0;
@@ -80,6 +88,7 @@ class ender_dragon extends FlyingMonster implements ProjectileSource{
 			}
 		}
 	}
+	
 	public function getDrops() : array{
 		if($this->isLootDropAllowed()){
 			return [Item::get(Item::EMERALD_BLOCK, 0, mt_rand(0, 2))];
@@ -87,9 +96,11 @@ class ender_dragon extends FlyingMonster implements ProjectileSource{
 			return [];
 		}
 	}
+	
 	public function getMaxHealth() : int{
 		return 100;
 	}
+	
 	public function getXpDropAmount() : int{
 		return 5;
 	}
