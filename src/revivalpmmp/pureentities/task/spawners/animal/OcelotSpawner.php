@@ -17,9 +17,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+declare(strict_types=1);
 
 namespace revivalpmmp\pureentities\task\spawners\animal;
-
 
 use pocketmine\block\Grass;
 use pocketmine\level\generator\biome\Biome;
