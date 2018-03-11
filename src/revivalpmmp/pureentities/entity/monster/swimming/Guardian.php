@@ -39,5 +39,9 @@ class Guardian extends SwimmingMonster implements Monster{
 	public function getName() : string{
 		return "Guardian";
 	}
+	
+	public function getMaxHealth() : int{
+		return 10;
+	}
 
 }
