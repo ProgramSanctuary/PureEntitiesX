@@ -48,7 +48,6 @@ class Parrot extends FlyingAnimal implements IntfTameable, IntfCanInteract{
 			Item::MELON_SEEDS,
 			Item::PUMPKIN_SEEDS,
 			Item::WHEAT_SEEDS
-			Item::BREAD
 		);
 		if(empty($this->birdType)){
 			$this->setBirdType(mt_rand(0, 4));
