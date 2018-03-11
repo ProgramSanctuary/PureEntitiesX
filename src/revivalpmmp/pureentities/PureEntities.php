@@ -36,6 +36,7 @@ use pocketmine\ThreadManager;
 use pocketmine\tile\Tile;
 use pocketmine\utils\TextFormat;
 use revivalpmmp\pureentities\data\Color;
+use revivalpmmp\pureentities\entity\monster\flying\EnderDragon;
 use revivalpmmp\pureentities\entity\monster\swimming\ElderGuardian;
 use revivalpmmp\pureentities\entity\animal\flying\Bat;
 use revivalpmmp\pureentities\entity\animal\flying\Parrot;
