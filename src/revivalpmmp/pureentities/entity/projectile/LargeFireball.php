@@ -16,13 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
-/**
- * Created by PhpStorm.
- * User: aaron
- * Date: 2/4/2018
- * Time: 12:00 AM
- */
+declare(strict_types=1);
 
 namespace revivalpmmp\pureentities\entity\projectile;
 
