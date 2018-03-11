@@ -36,6 +36,7 @@ use pocketmine\ThreadManager;
 use pocketmine\tile\Tile;
 use pocketmine\utils\TextFormat;
 use revivalpmmp\pureentities\data\Color;
+use revivalpmmp\pureentities\entity\monster\swimming\Guardian;
 use revivalpmmp\pureentities\entity\monster\flying\EnderDragon;
 use revivalpmmp\pureentities\entity\monster\swimming\ElderGuardian;
 use revivalpmmp\pureentities\entity\animal\flying\Bat;
@@ -151,7 +152,7 @@ class PureEntities extends PluginBase implements CommandExecutor{
 			Endermite::class,
 			Evoker::class,
 			Ghast::class,
-			//Guardian::class,
+			Guardian::class,
 			Horse::class,
 			Husk::class,
 			IronGolem::class,
