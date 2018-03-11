@@ -31,25 +31,6 @@ class ElderGuardian extends SwimmingMonster implements Monster{
 
 	const NETWORK_ID = Data::NETWORK_IDS["elder_guardian"];
 
-	public function attackEntity(Entity $player){
-		parent::attackEntity($player);
-	}
-	
-        public function getDrops() : array{
-		$drops = [];
-		if($this->isLootDropAllowed()){
-			switch(mt_rand(0, 1)){
-				case 0:
-					$drops[] = Item::get(Item::PRISMARINE_SHARD, 0, 1);
-					break;
-				case 1:
-					$drops[] = Item::get(Item::PRISMARINE_CRYSTAL, 0, 1);
-					break;
-			}
-		}
-		return $drops;
-	}
-
 	public function getName() : string{
 		return "ElderGuardian";
 	}
