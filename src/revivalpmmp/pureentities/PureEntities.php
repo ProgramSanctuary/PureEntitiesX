@@ -146,7 +146,7 @@ class PureEntities extends PluginBase implements CommandExecutor{
 			Donkey::class,
 			ElderGuardian::class,
 			//EnderCharge::class,
-			//EnderDragon::class,
+			EnderDragon::class,
 			Enderman::class,
 			Endermite::class,
 			Evoker::class,
