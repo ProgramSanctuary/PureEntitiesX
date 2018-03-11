@@ -1,4 +1,3 @@
-
 <?php
 /**
  * PureEntitiesX: Mob AI Plugin for PMMP
