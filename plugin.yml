@@ -1,4 +1,4 @@
-name: EntitiesPM+
+name: EntitiesPE+
 main: revivalpmmp\pureentities\PureEntities
 version: 0.2.1
 api: [3.0.0-ALPHA11]
@@ -6,7 +6,7 @@ api: [3.0.0-ALPHA11]
 load: STARTUP
 authors: ["milk0417", "RevivalPMMP", "ProgramSanctuary"]
 description: Brings back all your favourite entities.
-website: https://github.com/RevivalPMMP/PureEntitiesX
+website: https://github.com/ProgramSanctuary/EntitiesPE+
 
 commands:
   pesummon:
