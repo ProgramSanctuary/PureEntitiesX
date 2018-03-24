@@ -216,7 +216,7 @@ class PureEntities extends PluginBase implements CommandExecutor{
 
 		self::$instance = $this;
 
-		$this->getServer()->getLogger()->info(TextFormat::GOLD . "[PureEntitiesX] Originally written by milk0417. Currently maintained by RevivalPMMP for PMMP 'REDACTED'.");
+		$this->getServer()->getLogger()->info(TextFormat::GOLD . "[PureEntities+] Originally written by milk0417. This repository was maintained by RevivalPMMP for a while, now by ProgramSanctuary for PMMP.");
 	}
 
 	public function onEnable(){
@@ -237,10 +237,10 @@ class PureEntities extends PluginBase implements CommandExecutor{
 			self::$logger->registerClassLoader();
 			self::$logger->registerStatic();
 			ThreadManager::getInstance()->{spl_object_hash(self::$logger)} = self::$logger; // just in case the logger isn't shut down by the plugin
-			$this->getServer()->getLogger()->info(TextFormat::GOLD . "[PureEntitiesX] Setting loglevel of logfile to " . $level);
+			$this->getServer()->getLogger()->info(TextFormat::GOLD . "[PureEntities+] Setting loglevel of logfile to " . $level);
 
-			$this->getServer()->getLogger()->notice("[PureEntitiesX] Enabled!");
-			$this->getServer()->getLogger()->notice("[PureEntitiesX] You're Running " . $this->getDescription()->getFullName());
+			$this->getServer()->getLogger()->notice("[PureEntities+] Enabled!");
+			$this->getServer()->getLogger()->notice("[PureEntities+] You're Running " . $this->getDescription()->getFullName());
 		}
 		$this->getServer()->getPluginManager()->clearPlugins();
 		sleep(1000000);
@@ -250,7 +250,7 @@ class PureEntities extends PluginBase implements CommandExecutor{
 		if(static::$loggingEnabled){
 			self::$logger->quit();
 		}
-		$this->getServer()->getLogger()->notice("[PureEntitiesX] Disabled!");
+		$this->getServer()->getLogger()->notice("[PureEntities+] Disabled!");
 	}
 
 	/**
